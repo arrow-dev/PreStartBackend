@@ -1,9 +1,8 @@
+using Microsoft.Azure.Mobile.Server.Tables;
+using PreStartBackend.DataObjects;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
-using Microsoft.Azure.Mobile.Server;
-using Microsoft.Azure.Mobile.Server.Tables;
-using PreStartBackend.DataObjects;
 
 namespace PreStartBackend.Models
 {
@@ -25,8 +24,8 @@ namespace PreStartBackend.Models
         public MobileServiceContext() : base(connectionStringName)
         {
         }
-
-        public DbSet<TodoItem> TodoItems { get; set; }
+        
+        public DbSet<Prestart> Prestarts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
