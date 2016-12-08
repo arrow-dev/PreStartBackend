@@ -1,5 +1,6 @@
 ﻿using Microsoft.Azure.Mobile.Server;
 using System;
+using System.Collections.ObjectModel;
 
 namespace PreStartBackend.DataObjects
 {
@@ -55,6 +56,6 @@ namespace PreStartBackend.DataObjects
 
         public bool ErosionAndSedimentControlImplemented { get; set; }
 
-
+        public virtual Collection<Task> Tasks { get; set; }
     }
 }

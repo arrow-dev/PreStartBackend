@@ -33,5 +33,9 @@ namespace PreStartBackend.Models
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
+
+        public System.Data.Entity.DbSet<PreStartBackend.DataObjects.Hazard> Hazards { get; set; }
+
+        public System.Data.Entity.DbSet<PreStartBackend.DataObjects.Task> Tasks { get; set; }
     }
 }
