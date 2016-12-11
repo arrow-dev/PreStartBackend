@@ -15,7 +15,7 @@ namespace PreStartBackend.Controllers
         {
             base.Initialize(controllerContext);
             MobileServiceContext context = new MobileServiceContext();
-            DomainManager = new EntityDomainManager<Hazard>(context, Request);
+            DomainManager = new EntityDomainManager<Hazard>(context, Request, enableSoftDelete: true);
         }
 
         // GET tables/Hazard
