@@ -1,11 +1,18 @@
 ﻿using Microsoft.Azure.Mobile.Server;
-using System;
 using System.Collections.ObjectModel;
 
 namespace PreStartBackend.DataObjects
 {
     public class Prestart: EntityData
     {
+        public string ContractNumber { get; set; }
+
+        public string ContractName { get; set; }
+
+        public string Location { get; set; }
+
+        public string LotNo { get; set; }
+
         public string Department { get; set; }
 
         public string Project { get; set; }
@@ -13,8 +20,6 @@ namespace PreStartBackend.DataObjects
         public string JobNumber { get; set; }
 
         public string SiteManager { get; set; }
-
-        public DateTime Date { get; set; }
 
         public string StmsNumber { get; set; }
 
