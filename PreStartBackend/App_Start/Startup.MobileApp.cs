@@ -2,7 +2,10 @@
 using Microsoft.Azure.Mobile.Server.Authentication;
 using Microsoft.Azure.Mobile.Server.Config;
 using Owin;
+using PreStartBackend.DataObjects;
 using PreStartBackend.Models;
+using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data.Entity;
 using System.Web.Http;
@@ -45,16 +48,20 @@ namespace PreStartBackend
     {
         protected override void Seed(MobileServiceContext context)
         {
-            //List<TodoItem> todoItems = new List<TodoItem>
-            //{
-            //    new TodoItem { Id = Guid.NewGuid().ToString(), Text = "First item", Complete = false },
-            //    new TodoItem { Id = Guid.NewGuid().ToString(), Text = "Second item", Complete = false }
-            //};
+            List<Site> sites = new List<Site>
+            {
+                new Site {Id = Guid.NewGuid().ToString(), Name = "Northern Intersection"},
+                new Site {Id = Guid.NewGuid().ToString(), Name = "Cycleway"},
+                new Site {Id = Guid.NewGuid().ToString(), Name = "Quarry"},
+                new Site {Id = Guid.NewGuid().ToString(), Name = "Motorway"},
+                new Site {Id = Guid.NewGuid().ToString(), Name = "Stadium"},
+                new Site {Id = Guid.NewGuid().ToString(), Name = "Yard"}
+            };
 
-            //foreach (TodoItem todoItem in todoItems)
-            //{
-            //    context.Set<TodoItem>().Add(todoItem);
-            //}
+            foreach (var site in sites)
+            {
+                context.Set<Site>().Add(site);
+            }
 
             base.Seed(context);
         }

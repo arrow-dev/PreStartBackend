@@ -15,7 +15,7 @@ namespace PreStartBackend.DataObjects
 
         public string Department { get; set; }
 
-        public string Project { get; set; }
+        public string SiteId { get; set; }
 
         public string JobNumber { get; set; }
 
@@ -68,5 +68,7 @@ namespace PreStartBackend.DataObjects
         public bool ErosionAndSedimentControlImplemented { get; set; }
 
         public virtual Collection<Task> Tasks { get; set; }
+
+        public virtual Site Site { get; set; }
     }
 }

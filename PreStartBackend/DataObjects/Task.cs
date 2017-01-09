@@ -6,8 +6,8 @@ namespace PreStartBackend.DataObjects
     public class Task: EntityData
     {
         public string Description { get; set; }
-        public string PrestartId { get; set; }
-        public virtual Prestart Prestart { get; set; }
+        public string SiteId { get; set; }
+        public virtual Site Site { get; set; }
         public virtual Collection<Hazard> Hazards { get; set; }
     }
 }
