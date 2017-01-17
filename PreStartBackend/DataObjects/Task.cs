@@ -7,7 +7,6 @@ namespace PreStartBackend.DataObjects
     {
         public string Description { get; set; }
         public string SiteId { get; set; }
-        public virtual Site Site { get; set; }
         public virtual Collection<Hazard> Hazards { get; set; }
     }
 }

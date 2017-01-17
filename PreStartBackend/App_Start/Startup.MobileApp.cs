@@ -46,25 +46,25 @@ namespace PreStartBackend
 
     public class MobileServiceInitializer : DropCreateDatabaseIfModelChanges<MobileServiceContext>
     {
-        protected override void Seed(MobileServiceContext context)
-        {
-            List<Site> sites = new List<Site>
-            {
-                new Site {Id = Guid.NewGuid().ToString(), Name = "Northern Intersection"},
-                new Site {Id = Guid.NewGuid().ToString(), Name = "Cycleway"},
-                new Site {Id = Guid.NewGuid().ToString(), Name = "Quarry"},
-                new Site {Id = Guid.NewGuid().ToString(), Name = "Motorway"},
-                new Site {Id = Guid.NewGuid().ToString(), Name = "Stadium"},
-                new Site {Id = Guid.NewGuid().ToString(), Name = "Yard"}
-            };
+        //protected override void Seed(MobileServiceContext context)
+        //{
+        //    List<Site> sites = new List<Site>
+        //    {
+        //        new Site {Id = Guid.NewGuid().ToString(), Name = "Northern Intersection"},
+        //        new Site {Id = Guid.NewGuid().ToString(), Name = "Cycleway"},
+        //        new Site {Id = Guid.NewGuid().ToString(), Name = "Quarry"},
+        //        new Site {Id = Guid.NewGuid().ToString(), Name = "Motorway"},
+        //        new Site {Id = Guid.NewGuid().ToString(), Name = "Stadium"},
+        //        new Site {Id = Guid.NewGuid().ToString(), Name = "Yard"}
+        //    };
 
-            foreach (var site in sites)
-            {
-                context.Set<Site>().Add(site);
-            }
+        //    foreach (var site in sites)
+        //    {
+        //        context.Set<Site>().Add(site);
+        //    }
 
-            base.Seed(context);
-        }
+        //    base.Seed(context);
+        //}
     }
 }
 

@@ -27,17 +27,15 @@ namespace PreStartBackend.Models
         
         public DbSet<Prestart> Prestarts { get; set; }
 
+        public DbSet<Hazard> Hazards { get; set; }
+
+        public DbSet<Task> Tasks { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Add(
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
-
-        public DbSet<Hazard> Hazards { get; set; }
-
-        public DbSet<Task> Tasks { get; set; }
-
-        public DbSet<Site> Sites { get; set; }
     }
 }

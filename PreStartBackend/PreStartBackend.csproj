@@ -184,12 +184,10 @@
     <Compile Include="App_Start\Startup.MobileApp.cs" />
     <Compile Include="Controllers\HazardController.cs" />
     <Compile Include="Controllers\PrestartController.cs" />
-    <Compile Include="Controllers\SiteController.cs" />
     <Compile Include="Controllers\TaskController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DataObjects\Hazard.cs" />
     <Compile Include="DataObjects\Prestart.cs" />
-    <Compile Include="DataObjects\Site.cs" />
     <Compile Include="DataObjects\Task.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

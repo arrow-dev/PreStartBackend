@@ -68,7 +68,5 @@ namespace PreStartBackend.DataObjects
         public bool ErosionAndSedimentControlImplemented { get; set; }
 
         public virtual Collection<Task> Tasks { get; set; }
-
-        public virtual Site Site { get; set; }
     }
 }
