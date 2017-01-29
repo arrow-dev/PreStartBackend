@@ -1,12 +1,12 @@
 ﻿using Microsoft.Azure.Mobile.Server;
-using System;
 
 namespace PreStartBackend.DataObjects
 {
     public class SignOn : EntityData
     {
-        public String Name { get; set; }    
-        public String Employer { get; set; }
+        public string SiteId { get; set; }
+        public string Name { get; set; }    
+        public string Employer { get; set; }
         public bool HiVis { get; set; }
         public bool SafetyBoots { get; set; }
         public bool Gloves { get; set; }
