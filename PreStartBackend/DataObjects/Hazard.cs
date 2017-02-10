@@ -4,6 +4,8 @@ namespace PreStartBackend.DataObjects
 {
     public class Hazard: EntityData
     {
+        public string Task { get; set; }
+
         public string Description { get; set; }
 
         public string Repercussion { get; set; }
@@ -14,8 +16,8 @@ namespace PreStartBackend.DataObjects
 
         public string RiskAfter { get; set; }
 
-        public string TaskId { get; set; }
+        public string PrestartId { get; set; }
 
-        public virtual Task Task { get; set; }
+        public virtual Prestart Prestart { get; set; }
     }
 }
