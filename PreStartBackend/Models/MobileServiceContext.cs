@@ -29,8 +29,6 @@ namespace PreStartBackend.Models
 
         public DbSet<Hazard> Hazards { get; set; }
 
-        public DbSet<Task> Tasks { get; set; }
-
         public DbSet<SignOn> SignOns { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

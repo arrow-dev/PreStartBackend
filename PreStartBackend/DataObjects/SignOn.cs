@@ -1,9 +1,12 @@
-﻿using Microsoft.Azure.Mobile.Server;
+﻿using System;
+using Microsoft.Azure.Mobile.Server;
 
 namespace PreStartBackend.DataObjects
 {
     public class SignOn : EntityData
     {
+        public DateTime DateCreated { get; set; }
+
         public string Name { get; set; }
             
         public string Employer { get; set; }
