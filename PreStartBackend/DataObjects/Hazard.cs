@@ -1,11 +1,11 @@
-﻿using System;
-using Microsoft.Azure.Mobile.Server;
+﻿using Microsoft.Azure.Mobile.Server;
+using System;
 
 namespace PreStartBackend.DataObjects
 {
     public class Hazard: EntityData
     {
-        public DateTime DateCreated { get; set; }
+        public DateTime? DateCreated { get; set; }
 
         public string Task { get; set; }
 

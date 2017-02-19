@@ -1,12 +1,12 @@
-﻿using System;
-using Microsoft.Azure.Mobile.Server;
+﻿using Microsoft.Azure.Mobile.Server;
+using System;
 using System.Collections.ObjectModel;
 
 namespace PreStartBackend.DataObjects
 {
     public class Prestart: EntityData
     {
-        public DateTime DateCreated { get; set; }
+        public DateTime? DateCreated { get; set; }
 
         public string ContractNumber { get; set; }
 
