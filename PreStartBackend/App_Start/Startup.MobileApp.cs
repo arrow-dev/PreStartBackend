@@ -46,25 +46,25 @@ namespace PreStartBackend
 
     public class MobileServiceInitializer : DropCreateDatabaseIfModelChanges<MobileServiceContext>
     {
-        //protected override void Seed(MobileServiceContext context)
-        //{
-        //    //List<Site> sites = new List<Site>
-        //    //{
-        //    //    new Site {Id = Guid.NewGuid().ToString(), Name = "Northern Intersection"},
-        //    //    new Site {Id = Guid.NewGuid().ToString(), Name = "Cycleway"},
-        //    //    new Site {Id = Guid.NewGuid().ToString(), Name = "Quarry"},
-        //    //    new Site {Id = Guid.NewGuid().ToString(), Name = "Motorway"},
-        //    //    new Site {Id = Guid.NewGuid().ToString(), Name = "Stadium"},
-        //    //    new Site {Id = Guid.NewGuid().ToString(), Name = "Yard"}
-        //    //};
+        protected override void Seed(MobileServiceContext context)
+        {
+            List<Hazard> hazards = new List<Hazard>
+            {
+                new Hazard {Id = Guid.NewGuid().ToString(), Task = "Driving"},
+                new Hazard {Id = Guid.NewGuid().ToString(), Task = "Site set up"},
+                new Hazard {Id = Guid.NewGuid().ToString(), Task = "Heavy lift"},
+                new Hazard {Id = Guid.NewGuid().ToString(), Task = "Laying Bitumen"},
+                new Hazard {Id = Guid.NewGuid().ToString(), Task = "Digging"},
+                new Hazard {Id = Guid.NewGuid().ToString(), Task = "Cleaning up site"}
+            };
 
-        //    //foreach (var site in sites)
-        //    //{
-        //    //    context.Set<Site>().Add(site);
-        //    //}
+            foreach (var hazard in hazards)
+            {
+                context.Set<Hazard>().Add(hazard);
+            }
 
-        //    base.Seed(context);
-        //}
+            base.Seed(context);
+        }
     }
 }
 

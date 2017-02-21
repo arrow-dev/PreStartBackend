@@ -5,7 +5,7 @@ namespace PreStartBackend.DataObjects
 {
     public class SignOn : EntityData
     {
-        public DateTime? DateCreated { get; set; }
+        public DateTimeOffset? DateCreated { get; set; }
 
         public string Name { get; set; }
             
