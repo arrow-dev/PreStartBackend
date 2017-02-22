@@ -5,7 +5,7 @@ namespace PreStartBackend.DataObjects
 {
     public class Hazard: EntityData
     {
-        public DateTimeOffset? DateCreated { get; set; }
+        public DateTime DateCreated { get; set; }
 
         public string Task { get; set; }
 
