@@ -32,7 +32,5 @@ namespace PreStartBackend.DataObjects
         public byte[] Signature { get; set; }
 
         public string PrestartId { get; set; }
-
-        public virtual Prestart Prestart { get; set; }
     }
 }

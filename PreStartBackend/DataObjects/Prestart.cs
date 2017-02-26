@@ -1,6 +1,5 @@
 ﻿using Microsoft.Azure.Mobile.Server;
 using System;
-using System.Collections.ObjectModel;
 
 namespace PreStartBackend.DataObjects
 {
@@ -69,9 +68,5 @@ namespace PreStartBackend.DataObjects
         public bool SpecialistPpeRequired { get; set; }
 
         public bool ErosionAndSedimentControlImplemented { get; set; }
-
-        public virtual Collection<Hazard> Hazards { get; set; }
-
-        public virtual Collection<SignOn> SignOns { get; set; }
     }
 }

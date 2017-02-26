@@ -20,7 +20,5 @@ namespace PreStartBackend.DataObjects
         public string RiskAfter { get; set; }
 
         public string PrestartId { get; set; }
-
-        public virtual Prestart Prestart { get; set; }
     }
 }
